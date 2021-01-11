@@ -1,0 +1,36 @@
+.library-song-container {
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+       
+    }
+    &:hover {
+        background-color: rgb(222,222,255);
+    }
+
+    img{
+        max-width: 30%;
+    }
+    .song-detail {
+        margin-left: 2rem;
+        font-size: 1.3rem;
+
+        h3 {
+            margin-bottom: .2rem;
+        }
+    }
+}
+
+.selected {
+    background-color: rgb(222,222,255);
+}
